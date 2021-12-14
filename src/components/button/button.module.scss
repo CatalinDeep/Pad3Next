@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+.btn_wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  padding-left: inherit;
+  padding-right: inherit;
+}
+
+.btn {
+  background-color: $purple;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 36px;
+  height: 50px;
+  width: 50px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: $dark-purple;
+  }
+}

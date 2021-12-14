@@ -1,14 +1,9 @@
 import { Pool } from "pg";
+import dbConfig from "../../dbConfig.json";
 
 export default async function handler(req, res) {
   const body = req.body;
-  const pool = new Pool({
-    host: "localhost",
-    user: "postgres",
-    port: 5432,
-    password: "3239",
-    database: "DB1",
-  });
+  const pool = new Pool(dbConfig);
   pool
     .query(
       `

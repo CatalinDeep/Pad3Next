@@ -7,7 +7,7 @@ export default async function handler(req, res) {
   pool
     .query(
       `
-      UPDATE "Posts"
+      UPDATE Posts
       SET 
       "user" ='${body.user}',
       "title" = '${body.title}',

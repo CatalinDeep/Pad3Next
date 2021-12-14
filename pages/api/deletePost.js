@@ -5,7 +5,7 @@ export default async function handler(req, res) {
   const body = req.body;
   const pool = new Pool(dbConfig);
   pool
-    .query(`DELETE FROM "Posts" WHERE id=${body.id};`)
+    .query(`DELETE FROM Posts WHERE id=${body.id};`)
     .then((poolRes) => {
       res.json({ post: "deleted" });
     })

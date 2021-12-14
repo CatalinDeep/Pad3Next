@@ -6,7 +6,7 @@ import dbConfig from "../../dbConfig.json";
 export default async function handler(req, res) {
   const pool = new Pool(dbConfig);
   pool
-    .query('select * from "Posts"')
+    .query("select * from Posts")
     .then((poolRes) => {
       res.json(poolRes.rows);
     })

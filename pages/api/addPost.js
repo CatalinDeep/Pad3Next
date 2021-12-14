@@ -7,7 +7,7 @@ export default async function handler(req, res) {
   const pool = new Pool(dbConfig);
   pool
     .query(
-      `INSERT INTO "Posts"("user","title","content", "id")
+      `INSERT INTO Posts("user","title","content", "id")
           VALUES ('${body.user}','${body.title}','${body.content}', ${time});`
     )
     .then((poolRes) => {

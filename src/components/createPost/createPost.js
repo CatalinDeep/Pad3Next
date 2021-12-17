@@ -58,7 +58,7 @@ export default function CreatePost({ closeModal }) {
         </label>
         <div className={styles.buttons}>
           <button type="submit" className={styles.submit_btn}>
-            Submit post
+            Submit post changed
           </button>
         </div>
       </form>
